@@ -31,7 +31,7 @@ jobs:
         run: mvn clean
 
       - uses: mr-smithers-excellent/docker-build-push@v6
-      - name: Build & push Docker image
+        name: Build & push Docker image
         with:
           image: faith50/git_action_test
           tags: latest
